@@ -29,7 +29,7 @@ class addParticipante{
 		try{			
 			let observer = new MutationObserver(()=>this.addZoom())
 			//let observer = new MutationObserver(()=>console.log('teste'))
-			observer.observe(this.div_pai, {childList:true, subtree:true});			
+			observer.observe(this.div_pai, {childList:true});			
 		}catch(error){
 			console.log("Habilitar a lista de participantes.")											
 			setTimeout(function(){new addParticipante('button')}, 6000)
